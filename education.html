@@ -5,24 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Talha Ibn Aziz</title>
+  <link rel="icon" href="images/favicon.ico" type="image/favicon.ico">
   <link rel="stylesheet" href="styles.css">
-  <script src="highlight.js"></script>
+  <script src="common.js" defer></script>
 </head>
-
-<style>
-  .emoji-icon {
-    font-size: 3.5em;
-    vertical-align: middle;
-  }
-</style>
 
 <body>
   <div class="container">
-    <h1>Talha Ibn Aziz</h1>
-    <div class="subtitle">(Personal Website)</div>
+    <h1 id="title">Talha Ibn Aziz</h1>
+    <div id="subtitle" class="subtitle"></div>
+    
     <div class="navigation-network">
       <svg id="network-connections" width="100%" height="100%" viewBox="0 0 1000 100" preserveAspectRatio="none">
-        <!-- Static lines -->
         <line x1="280" y1="35.5" x2="355" y2="35.5" stroke="black" stroke-width="2" />
         <line x1="280" y1="41.5" x2="355" y2="41.5" stroke="black" stroke-width="2" />
         <line x1="433" y1="35.5" x2="508" y2="35.5" stroke="black" stroke-width="2" />
@@ -50,7 +44,7 @@
       <div class="nav-item experience-box">
         <div class="box">
           <a href="experience.html" class="image-link">
-            <span class="emoji-icon">🖥</span>
+            <span class="emoji-icon">📠</span>
           </a>
         </div>
         <div class="label">Experience</div>
@@ -64,22 +58,86 @@
         <div class="label">Publications</div>
       </div>
     </div>
-    <div class="footnote">
-      Note: These icons in the navigation bar have been taken from Ubuntu 24.04 Characters Emoji set.
+
+    <h2 class="page-header">Education</h2>
+
+    <div class="education-content">
+      <!-- PhD Section -->
+      <div class="education-section">
+        <div class="education-text">
+          <h3>Doctor of Philosophy (PhD)</h3>
+          <p><strong>Institution:</strong> <a href="https://www.ualberta.ca/index.html" target="_blank">University of Alberta</a></p>
+          <p><strong>Department:</strong> <a href="https://www.ualberta.ca/en/computing-science/index.html" target="_blank">Computing Science</a></p>
+          <p><strong>Status:</strong> Ongoing</p>
+          <p>I recently started my PhD under the same supervisor at the University of Alberta.</p>
+        </div>
+        <img src="images/uofa.png" alt="University of Alberta" class="institution-logo">
+      </div>
+
+      <!-- MSc Section -->
+      <div class="education-section">
+        <div class="education-text">
+          <h3>Master of Science (MSc)</h3>
+          <p><strong>Institution:</strong> <a href="https://www.ualberta.ca/index.html" target="_blank">University of Alberta</a></p>
+          <p><strong>Department:</strong> <a href="https://www.ualberta.ca/en/computing-science/index.html" target="_blank">Computing Science</a></p>
+          <p><strong>GPA:</strong> 3.78/4.00</p>
+          <p><strong>Graduation:</strong> November 2023 (1 year 9 months)</p>
+          <p><strong>Supervisor:</strong> <a href="https://apps.ualberta.ca/directory/person/ioanis" target="_blank">Ioannis Nikolaidis</a></p>
+          <p><strong>Research Group:</strong> Computer Networks</p>
+          <p>I got my thesis-based M.Sc. degree from the Computing Science Department of the University of Alberta (UofA). My work was on co-simulation of smart-grid applications and was funded jointly by the Future Energy Systems (FES) of UofA and Natural Sciences and Engineering Research Council of Canada (NSERC).</p>
+          
+          <h4>Notable Courses:</h4>
+          <ul>
+            <li>CMPUT 657 Heuristic Search by Professor Micheal Buro</li>
+            <li>CMPUT 658 Single Agent Search by Professor Nathan Sturtevant</li>
+            <li>CMPUT 500 Performance Modelling and Design of Computer Systems by Professor Omid Ardakanian</li>
+            <li>CMPUT 640 Sensor Networks and Edge Computing by Professor Ioanis Nikolaidis</li>
+          </ul>
+        </div>
+        <img src="images/uofa.png" alt="University of Alberta" class="institution-logo">
+      </div>
+
+      <!-- BSc Section -->
+      <div class="education-section">
+        <div class="education-text">
+          <h3>Bachelor of Science (BSc. Engg.)</h3>
+          <p><strong>Institution:</strong> <a href="https://www.iutoic-dhaka.edu/" target="_blank">Islamic University of Technology (IUT)</a></p>
+          <p><strong>Department:</strong> <a href="https://cse.iutoic-dhaka.edu/" target="_blank">Computer Science and Engineering</a></p>
+          <p><strong>GPA:</strong> 3.90/4.00</p>
+          <p><strong>Graduation:</strong> November 2018 (3 years 10 months)</p>
+          <p><strong>Supervisor:</strong> <a href="https://cse.iutoic-dhaka.edu/profile/mahbub/education" target="_blank">Muhammad Mahbub Alam</a></p>
+          <p><strong>Research Group:</strong> <a href="https://cse.iutoic-dhaka.edu/research-group" target="_blank">Networking Research Group</a></p>
+          
+          <h4>Notable Courses:</h4>
+          <ul>
+            <li>CSE 4301/2 Object Oriented Programming (C++)</li>
+            <li>CSE 4307/8 Database Management Systems</li>
+            <li>CSE 4401/2 Visual Programming (Java)</li>
+            <li>CSE 4605/6 Computer Networks</li>
+            <li>CSE 4701/2 Artificial Intelligence and Expert Systems</li>
+            <li>Math 4707 Probability and Stochastic Processes</li>
+            <li>CSE 4835 Pattern Recognition</li>
+          </ul>
+        </div>
+        <img src="images/iut.png" alt="Islamic University of Technology" class="institution-logo">
+      </div>
+
+      <!-- High School Section -->
+      <div class="education-section">
+        <div class="education-text">
+          <h3>Higher Secondary and Secondary Education</h3>
+          <p><strong>Institution:</strong> <a href="https://mcc.army.mil.bd/" target="_blank">Mirzapur Cadet College (MCC)</a></p>
+          <p><strong>Location:</strong> Tangail, Dhaka, Bangladesh</p>
+          <p><strong>Duration:</strong> Classes 7 to 12 (6 years)</p>
+          <p><strong>Batch:</strong> 46th Batch (50 students)</p>
+          <p><strong>House:</strong> Nazrul House (Green house)</p>
+          <p>I got my High School Education from the Mirzapur Cadet College (MCC), where I spent six years from classes 7 to 12.</p>
+        </div>
+        <img src="images/mcc.png" alt="Mirzapur Cadet College" class="institution-logo">
+      </div>
     </div>
+
+    <div id="footnote" class="footnote">Contact: talhaibnaziz6343@gmail.com | taziz@ualberta.ca</div>
   </div>
 </body>
-
-<script>
-  document.querySelectorAll('.image-link').forEach(link => {
-    const box = link.closest('.box');
-    link.addEventListener('mouseover', () => {
-      box.style.backgroundColor = 'blue';
-    });
-    link.addEventListener('mouseout', () => {
-      box.style.backgroundColor = '#fff'; // Revert to original white background
-    });
-  });
-</script>
-
 </html>
