@@ -22,11 +22,17 @@ body {
 h1 {
   color: #1a1a1a;
   margin-bottom: 10px;
+  text-align: center;
+}
+
+h2 {
+  text-decoration: underline;
 }
 
 .subtitle {
   color: #555;
   margin: 0;
+  text-align: center;
 }
 
 .navigation-network {
@@ -34,22 +40,14 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1000px;
+  width: 500px;
+  height: 150px;
   margin-top: 20px;
-  margin-bottom: 40px;
-}
-
-.network-connections {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
+  margin-bottom: 80px;
 }
 
 .emoji-icon {
-  font-size: 3.5em;
+  font-size: 2.5em;
   vertical-align: middle;
 }
 
@@ -67,18 +65,23 @@ h1 {
 }
 .education-box {
   position: absolute;
-  top: 0%;
-  left: 35%;
+  top: 110px;
+  left: 30%;
 }
 .experience-box {
   position: absolute;
   top: 0%;
-  left: 50%;
+  left: 45%;
 }
 .publications-box {
   position: absolute;
+  top: 110px;
+  left: 55%;
+}
+.projects-box {
+  position: absolute;
   top: 0%;
-  left: 65%;
+  left: 70%;
 }
 
 .box {
@@ -86,18 +89,16 @@ h1 {
   border: 1px solid #000000;
   border-radius: 10px;
   padding: 2px;
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
   text-align: center;
   transition: all 0.3s ease;
 }
 
 .label {
-  font-size: 1rem;
-  margin-bottom: 10px;
+  font-size: 0.75rem;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
-  border-radius: 5px;
 }
 
 .image-link {
@@ -127,69 +128,78 @@ h1 {
   text-align: center;
   font-size: 0.75rem;
   color: #555;
-  padding: 10px 0;
+  padding: 10px;
 }
 
 /* Education Sections */
-.education-content {
+.content {
   width: 100%;
   max-width: 1000px;
 }
 
-.education-section {
+.section {
   margin-bottom: 30px;
   padding: 25px;
   border-radius: 10px;
   display: flex;
   align-items: flex-start;
   gap: 30px;
+  background-color: #d8e1e2;
 }
 
-.education-text {
+.text {
   flex: 1;
 }
 
-.education-section h3 {
+.section h3 {
   color: #2c3e50;
   margin-top: 0;
   margin-bottom: 15px;
-  font-size: 1.5em;
+  font-size: 1.3em;
+  text-decoration: underline;
 }
 
-.education-section h4 {
+.section h4 {
   color: #34495e;
   margin-top: 15px;
   margin-bottom: 10px;
   font-size: 1.1em;
 }
 
-.education-section p {
+.section p {
   color: #333;
   line-height: 1.6;
   margin-bottom: 10px;
 }
 
-.education-section ul {
+.section ul {
   color: #333;
   line-height: 1.8;
 }
 
-.education-section a {
+.section a {
   color: #007bff;
   text-decoration: none;
 }
 
-.education-section a:hover {
+.section a:hover {
   text-decoration: underline;
 }
 
-.institution-logo {
+.logo {
   width: 200px;
   height: auto;
   border-radius: 4px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
   background-color: #fff;
+  padding: 4px;
+}
+
+.duration {
+  color: #555;
+  font-style: italic;
+  margin-bottom: 10px;
 }
 
 .page-header {
