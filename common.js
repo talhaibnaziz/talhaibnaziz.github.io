@@ -22,7 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "/index.html": "home-box",
         "/education.html": "education-box",
         "/experience.html": "experience-box",
-        "/publications.html": "publications-box"
+        "/publications.html": "publications-box",
+        "/projects.html": "projects-box"
       };
 
       const currentUrl = window.location.pathname;
@@ -43,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const box = link.closest('.box');
         if (box) {
           link.addEventListener('mouseover', () => {
-            box.style.backgroundColor = 'blue';
+            box.style.backgroundColor = '#0ecca3ff';
           });
           link.addEventListener('mouseout', () => {
             box.style.backgroundColor = '#fff';

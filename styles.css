@@ -117,8 +117,8 @@ h2 {
 
 .box.highlight {
   background-color: #ffffff;
-  border: 2px solid #007bff;
-  box-shadow: 0 4px 8px rgba(0, 0, 255, 0.3);
+  border: 2px solid #ff0000;
+  box-shadow: 0 8px 16px rgba(255, 0, 0, 0.3);
 }
 
 .footnote {
@@ -205,4 +205,40 @@ h2 {
   font-size: 2em;
   margin-bottom: 30px;
   margin-top: 20px;
+}
+/* Static lines */
+line {
+  stroke: #cccccc;
+  stroke-width: 10;
+}
+
+/* Animated flow lines */
+.flow {
+  fill: none;
+  stroke: #ff0000;
+  stroke-width: 5;
+  stroke-dasharray: 10 8;
+  stroke-linecap: round;
+  animation: flow-horizontal 2s linear infinite;
+}
+
+.flow-vertical {
+  fill: none;
+  stroke: #ff0000;
+  stroke-width: 5;
+  stroke-dasharray: 10 8;
+  stroke-linecap: round;
+  animation: flow-vertical 2s linear infinite;
+}
+
+@keyframes flow-horizontal {
+  to {
+    stroke-dashoffset: -18;
+  }
+}
+
+@keyframes flow-vertical {
+  to {
+    stroke-dashoffset: 18;
+  }
 }
