@@ -55,4 +55,23 @@ document.addEventListener("DOMContentLoaded", function () {
     .catch(error => {
       console.error("Failed to load common.html:", error);
     });
+
+    const scrollBtn = document.getElementById('scrollToTop');
+        
+    // Show button when scrolled down 300px
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            scrollBtn.classList.add('visible');
+        } else {
+            scrollBtn.classList.remove('visible');
+        }
+    });
+    
+    // Smooth scroll to top when clicked
+    scrollBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
 });
